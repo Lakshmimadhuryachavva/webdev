@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,59 +7,99 @@
     <title>homepage</title>
 </head>
 <style>
-    .nav{
-        display: flex;
-        background-color: pink;
-    }
+    /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        body {
+            /* min-height: 100vh; */
+            display: flex;
+            flex-direction: column;
+        }
+    .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffb6c1;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
     #img{
         width:100px;
         height:100px;
-        
-    }
-    #loginbtn{
-        margin-left: 1300px;
-        background-color: transparent;
-        cursor: pointer;
+        border-radius: 50%;
+        }
 
-    }
-    .main{
-        display: flex;
-    }
-    .vertical-line{
-        height: 619px;
-        width: 2px;
-        background-color: black;
-        margin-left: 5px;
-    }
-    #menu{
-        font-size: large;
-        margin-top: 20px;
+#loginbtn{
+    margin-left: 1000px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top:10px;
+    border-radius: 10px;
+    padding: 8px 20px;
+    border-color: bisque;
+    
+
+}
+.main{
+    display: flex;
+}
+/* .vertical-line{
+    height: 490px;
+    width: 2px;
+    background-color: black;
+    margin-left: 5px;
+} */
+#menu{
+    font-size: large;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(220, 207, 207);
+    width: 200px;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 10px;
+    font-size: 20px;
+    height: 500px;
 
 
-    }
-    #images{
-        align-self: auto;
+}
+#images{
+    align-self: auto;
 
-    }
-    #i1{
-        height: 200px;
-        width: 200px;
-        margin-left: 250px;
-        margin-right: 25px;
-        margin-top: 200px;
-    }
-    #i2{
-        height: 200px;
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 25px;
-    }
-    #i3{
-        height: 200px;
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 25px;
-    }
+}
+#i1{
+    height: 200px;
+    width: 200px;
+    margin-left: 300px;
+    margin-right: 25px;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+#i2{
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+#i3{
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+.footer{
+    color: white;
+    flex-direction:row;
+    background-color: black;
+    font-size:20px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 </style>
 <body>
     <div>
@@ -69,31 +110,28 @@
         </div>
         <div class="main">
             <div id="menu">
-                  
-                    <ol>profile</ol>
-                    <hr>
-                    <ol>orders</ol>
-                    <hr>
-                    <ol>address</ol>
-                    <hr>
-                    <ol>wishlist</ol>
+                <ol>Profile</ol>
+                <hr>
+                <ol>Orders</ol>
+                <hr>
+                <ol>Address</ol>
+                <hr>
+                <ol>Wishlist</ol>
 
-            </div>
-            <div class="vertical-line"></div>
-            <div id="images">
-                <img src="images.jpg" id="i1">
-                <img src="Bachalpsee-cgq0cmt2757dsh4.jpg" id="i2">
-                <img src="201119_Wallpaper_cat_pawsitive_Desktop.jpg" id="i3">
-            </div>
         </div>
-        <footer>
-            <hr>
-            <div id="footercontents">
-                <p>contact</p>
-                <p>feedback</p>
-                <p>reviews</p>
-            </div>
-        </footer>
+        <!-- <div class="vertical-line"></div> -->
+        <div id="images">
+            <img src="images.jpg" id="i1">
+            <img src="Bachalpsee-cgq0cmt2757dsh4.jpg" id="i2">
+            <img src="201119_Wallpaper_cat_pawsitive_Desktop.jpg" id="i3">
+        </div>
     </div>
+    <div class="footer">
+        <p>Contact </p>
+        <p>Feedback</p>
+        <p>Reviews</p>
+    </div>
+    
+</div>
 </body>
 </html>
