@@ -3,97 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
+    <title>Improved Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffb6c1;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .login-btn {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #333;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #fff;
+            color: #ff7a9c;
+            transform: scale(1.05);
+        }
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        .menu-item {
+            padding: 15px 10px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 18px;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            list-style-type: none;
+        }
+
+        .menu-item:hover {
+            background-color: #f0f0f0;
+            padding-left: 15px;
+            color: #ff7a9c;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .content {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-card {
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.1);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .footer-item {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .footer-item:hover {
+            color: #ffb6c1;
+        }
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .image-card {
+                width: 150px;
+                height: 150px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
-<style>
-    .nav{
-        display: flex;
-        background-color: pink;
-    }
-    #img{
-        width:100px;
-        height:100px;
-        
-    }
-    #loginbtn{
-        margin-left: 1300px;
-        background-color: transparent;
-        cursor: pointer;
-
-    }
-    .main{
-        display: flex;
-    }
-    .vertical-line{
-        height: 619px;
-        width: 2px;
-        background-color: black;
-        margin-left: 5px;
-    }
-    #menu{
-        font-size: large;
-        margin-top: 20px;
-
-
-    }
-    #images{
-        align-self: auto;
-
-    }
-    #i1{
-        height: 200px;
-        width: 200px;
-        margin-left: 250px;
-        margin-right: 25px;
-        margin-top: 200px;
-    }
-    #i2{
-        height: 200px;
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 25px;
-    }
-    #i3{
-        height: 200px;
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 25px;
-    }
-</style>
 <body>
-    <div>
-        <div class="nav">
-            <img src="download.jpg" id="img">
-            <div>
-            <button id="loginbtn">Sign-in</button></div>
+    <div class="nav">
+        <img src="download.jpg" alt="Logo" class="logo">
+        <button class="login-btn">Sign-in</button>
+    </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <ul>
+                <li class="menu-item">Profile</li>
+                <li class="menu-item">Orders</li>
+                <li class="menu-item">Address</li>
+                <li class="menu-item">Wishlist</li>
+            </ul>
         </div>
-        <div class="main">
-            <div id="menu">
-                  
-                    <ol>profile</ol>
-                    <hr>
-                    <ol>orders</ol>
-                    <hr>
-                    <ol>address</ol>
-                    <hr>
-                    <ol>wishlist</ol>
-
+        <div class="content">
+            <div class="image-card">
+                <img src="Bachalpsee-cgq0cmt2757dsh4.jpg" alt="Image 1">
             </div>
-            <div class="vertical-line"></div>
-            <div id="images">
-                <img src="images.jpg" id="i1">
-                <img src="Bachalpsee-cgq0cmt2757dsh4.jpg" id="i2">
-                <img src="201119_Wallpaper_cat_pawsitive_Desktop.jpg" id="i3">
+            <div class="image-card">
+                <img src="Bachalpsee-cgq0cmt2757dsh4.jpg" alt="Image 2">
+            </div>
+            <div class="image-card">
+                <img src="Bachalpsee-cgq0cmt2757dsh4.jpg" alt="Image 3">
             </div>
         </div>
-        <footer>
-            <hr>
-            <div id="footercontents">
-                <p>contact</p>
-                <p>feedback</p>
-                <p>reviews</p>
-            </div>
-        </footer>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <p class="footer-item">Contact</p>
+            <p class="footer-item">Feedback</p>
+            <p class="footer-item">Reviews</p>
+        </div>
     </div>
 </body>
 </html>
