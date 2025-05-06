@@ -7,13 +7,12 @@
     <title>homepage</title>
 </head>
 <style>
-    /* * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        } */
+    *{
+        margin:0;
+        padding: 0;
+    }
+
         body {
-            /* min-height: 100vh; */
             display: flex;
             flex-direction: column;
         }
@@ -31,73 +30,74 @@
         border-radius: 50%;
         }
 
-#loginbtn{
-    margin-left: 1000px;
-    background-color: transparent;
-    cursor: pointer;
-    margin-top:10px;
-    border-radius: 10px;
-    padding: 8px 20px;
-    border-color: bisque;
+    #loginbtn{
+        margin-left: 1000px;
+        background-color: transparent;
+        cursor: pointer;
+        margin-top:10px;
+        border-radius: 10px;
+        padding: 8px 20px;
+        border-color: bisque;
     
 
 }
-.main{
-    display: flex;
+    .main{
+        display: flex;
 }
-/* .vertical-line{
-    height: 490px;
-    width: 2px;
-    background-color: black;
-    margin-left: 5px;
-} */
-#menu{
-    font-size: large;
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: rgb(220, 207, 207);
-    width: 200px;
-    padding: 20px;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 15px 10px;
-    font-size: 20px;
-    height: 500px;
-
-
+    #menu{
+        font-size: large;
+        /* margin-top: 10px; */
+        cursor: pointer;
+        background-color: rgb(220, 207, 207);
+        width: 200px;
+        padding: 20px;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 15px 10px;
+        font-size: 20px;
+        height: 500px;
+        
 }
-#images{
+    #images{
     align-self: auto;
 
 }
-#i1{
-    height: 200px;
-    width: 200px;
-    margin-left: 300px;
-    margin-right: 25px;
-    margin-top: 150px;
-    border-radius: 10px;
+    #i1{
+        height: 200px;
+        width: 200px;
+        margin-left: 300px;
+        margin-right: 25px;
+        margin-top: 150px;
+        border-radius: 10px;
 }
-#i2{
-    height: 200px;
-    width: 200px;
-    margin-left: 10px;
-    margin-right: 25px;
-    border-radius: 10px;
+    #i2{
+        height: 200px;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 25px;
+        border-radius: 10px;
 }
-#i3{
-    height: 200px;
-    width: 200px;
-    margin-left: 10px;
-    margin-right: 25px;
-    border-radius: 10px;
+    #i3{
+        height: 200px;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 25px;
+        border-radius: 10px;
 }
-.footer{
+    .footer {
+    display: flex;
+    justify-content: space-evenly; 
+    background-color:black;
     color: white;
-    flex-direction:row;
-    background-color: black;
-    font-size:20px ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin-top: 30px;
+    position:absolute;
 }
+
+    /* .footer-section {
+    flex: 1; 
+    padding: 0 10px;
+} */
+
 
 
 </style>
@@ -126,11 +126,11 @@
             <img src="201119_Wallpaper_cat_pawsitive_Desktop.jpg" id="i3">
         </div>
     </div>
-    <div class="footer">
-        <p>Contact </p>
-        <p>Feedback</p>
-        <p>Reviews</p>
-    </div>
+    <footer class="footer">
+        <div class="footer-section">About Us</div>
+        <div class="footer-section">Services</div>
+        <div class="footer-section">Contact</div>
+      </footer>
     
 </div>
 </body>
