@@ -17,40 +17,60 @@
         width:200px;
         height: 200px;
         padding:5%;
-        background-color:grey ;
+        background-color:#ffb6c1 ;
         border-radius: 10%;
-        
+        font-size: 20px;
+      
         
     }
     #un{
         font-size: large;
-        border-radius: 10%;
+        /* border-radius: 10%; */
     }
     #pass{
         font-size: large;
-        border-radius: 10%;
+        /* border-radius: 10%; */
     }
     #Signinbtn{
-        font-size: large;
-        border-radius: 10%;
+        width: 40%;
+      padding: 10px;
+      background-color:rgb(86, 85, 85);    
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
 
     }
     #fp{
         font-size: large;
+        color: black;
+        
+    }
+    #newuser{
+        width: 40%;
+      padding: 10px;
+      background-color:rgb(86, 85, 85);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 </style>
 <body>
     <div class="signin">
         <form>
-            <input type="text" placeholder="username" id="un">
+            <input type="text" placeholder="username" id="un" required>
             <br>
             <br>
-            <input type="text" placeholder="password" id="pass">
+            <input type="text" placeholder="password" id="pass" required>
             <br><br>
             <button id="Signinbtn">Sign-in</button>
             <br>
             <a href="#"><p id="fp">forgot password</p></a>
+            <p id="new">New User</p>
+            
         </form>
+        <button id="newuser"><a href="register.html">Register</a></button>
 
     </div>
 </body>
