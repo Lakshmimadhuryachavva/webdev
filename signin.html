@@ -6,35 +6,78 @@
     <title>Sign-in</title>
 </head>
 <style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
     body{
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        background-color: #f8f8f8;
+    }
+    .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffb6c1;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            
+        }
+    #img{
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        }
+
+    #loginbtn{
+        margin-left: 1000px;
+        background-color: transparent;
+        cursor: pointer;
+        margin-top:10px;
+        border-radius: 10px;
+        padding: 8px 20px;
+        border-color: bisque;
     }
     .signin{
-        width:200px;
-        height: 200px;
+        width:400px;
+        height: 400px;
         padding:5%;
-        background-color:#ffb6c1 ;
+        background-color:#ebe6e7 ;
         border-radius: 10%;
         font-size: 20px;
-      
-        
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px  ;
+        margin-left: 550px;
     }
+    /* .form-input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border 0.3s ease;
+        } */
     #un{
-        font-size: large;
-        /* border-radius: 10%; */
+        font-size: large; 
+        border-radius: 5px;
     }
     #pass{
         font-size: large;
-        /* border-radius: 10%; */
+        border-radius: 5px;
+        
     }
     #Signinbtn{
         width: 40%;
       padding: 10px;
-      background-color:rgb(86, 85, 85);    
+      background-color:#ffb6c1;    
       color: white;
       border: none;
       border-radius: 5px;
@@ -49,14 +92,32 @@
     #newuser{
         width: 40%;
       padding: 10px;
-      background-color:rgb(86, 85, 85);
+      background-color:#ffb6c1;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      
     }
+    
+    .footer {
+    display: flex;
+    justify-content: space-evenly; 
+    background-color:black;
+    color: white;
+    padding: 20px;
+    margin-top: 57px;
+    
+} 
+
+
 </style>
 <body>
+    <div class="nav">
+        <img src="download.jpg" id="img">
+        <div>
+        <button id="loginbtn"><a href="ind.html">Home</a></button></div>
+    </div>
     <div class="signin">
         <form>
             <input type="text" placeholder="username" id="un" required>
@@ -65,13 +126,18 @@
             <input type="text" placeholder="password" id="pass" required>
             <br><br>
             <button id="Signinbtn">Sign-in</button>
-            <br>
-            <a href="#"><p id="fp">forgot password</p></a>
-            <p id="new">New User</p>
+            <br><br>
+            <a href="#"><p id="fp">Forgot password?</p></a><br>
+            <p id="new">New User</p><br>
             
         </form>
         <button id="newuser"><a href="register.html">Register</a></button>
 
-    </div>
+    </div> 
+    <footer class="footer">
+        <div class="footer-section">About Us</div>
+        <div class="footer-section">Services</div>
+        <div class="footer-section">Contact</div>
+      </footer> 
 </body>
 </html>
